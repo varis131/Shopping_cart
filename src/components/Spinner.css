@@ -1,4 +1,7 @@
 .spinner {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
    width: 56px;
    height: 56px;
    border-radius: 50%;

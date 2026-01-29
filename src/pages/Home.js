@@ -24,17 +24,20 @@ const Home = () => {
   }, []);
   
   return (
-    <div>
+    <div className="max-w-7xl mx-auto px-6">
       {loading ? (
-        <Spinner />
+        <div className="min-h-screen flex items-center justify-center">
+          <Spinner />
+        </div>
+        
       ) : posts.length > 0 ? (
-        <div>
+        <div  className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
           {posts.map((post) => {
            return <Product key={post.id} post={post} />;
           })}
         </div>
       ) : (
-        <div>
+        <div className="flex justify-center items-center">
           <p>No Post found !!</p>
         </div>
       )}
