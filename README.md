@@ -5,13 +5,6 @@ ECOMZY demonstrates dynamic product rendering, cart management, and clean compon
 
 ---
 
-## 🚀 Live Demo
-
-🔗 [Live Project Link](#)  
-📂 [GitHub Repository](#)
-
----
-
 ## ✨ Features
 
 - 🛒 Add to Cart Functionality
