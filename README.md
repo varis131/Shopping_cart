@@ -4,8 +4,10 @@ A modern and responsive shopping cart application built using **React** and **Ta
 ECOMZY demonstrates dynamic product rendering, cart management, and clean component-based architecture.
 
 ---
-##live link
-ecomzyshop.vercel.app
+## 🚀 Live Demo
+
+👉 **Click Here to Visit:**  
+https://ecomzyshop.vercel.app
 
 
 ## ✨ Features
