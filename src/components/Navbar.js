@@ -9,7 +9,6 @@ const Navbar = () => {
 
   return (
     <nav className="navbar">
-      
       <NavLink to="/" className="navbar-logo">
         <img src="/logo.png" alt="Ecomzy" />
       </NavLink>
@@ -21,9 +20,7 @@ const Navbar = () => {
 
         <NavLink to="/cart" className="nav-cart">
           <FaShoppingCart />
-          {cart.length > 0 && (
-            <span className="cart-badge">{cart.length}</span>
-          )}
+          {cart.length > 0 && <span className="cart-badge">{cart.length}</span>}
         </NavLink>
       </div>
     </nav>
@@ -31,4 +28,3 @@ const Navbar = () => {
 };
 
 export default Navbar;
-

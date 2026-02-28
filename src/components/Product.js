@@ -1,6 +1,6 @@
 import React from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { remove, add } from "../redux/Slices/CartSlice";
+import { remove, add } from "../redux/CartSlice";
 import toast from "react-hot-toast";
 
 const Product = ({ post }) => {
@@ -18,11 +18,12 @@ const Product = ({ post }) => {
   }
 
   return (
-    <div className="group flex flex-col justify-between bg-white mt-4
+    <div
+      className="group flex flex-col justify-between bg-white mt-4
     rounded-2xl p-4 shadow-md hover:shadow-xl transition-all duration-300 
     ease-in-out transform hover:-translate-y-1  bg-gradient-to-br from-slate-50
-     via-gray-100 to-slate-200 py-10 px-6">
-      
+     via-gray-100 to-slate-200 py-10 px-6"
+    >
       {/* Image */}
       <div className="h-48 flex items-center justify-center mb-4">
         <img
@@ -44,9 +45,7 @@ const Product = ({ post }) => {
 
       {/* Price + Button */}
       <div className="flex items-center justify-between mt-auto">
-        <p className="text-lg font-bold text-green-600">
-          ${post.price}
-        </p>
+        <p className="text-lg font-bold text-green-600">${post.price}</p>
 
         {cart.some((p) => p.id === post.id) ? (
           <button
